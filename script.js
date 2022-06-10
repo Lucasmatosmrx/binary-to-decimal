@@ -11,10 +11,11 @@ function btnCalc() {
   document.getElementById("resulted").innerHTML = dec;
 }
 
-function somenteNumero() {
+function somenteNumero(event) {
   var tecla = window.event ? event.keyCode : e.which;
   if (tecla == 48 || tecla == 49) return true;
   else {
+    alert("Digite Somente '0' ou '1'");
     return false;
   }
 }
