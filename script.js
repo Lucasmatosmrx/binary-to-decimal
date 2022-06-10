@@ -10,3 +10,11 @@ function btnCalc() {
 
   document.getElementById("resulted").innerHTML = dec;
 }
+
+function somenteNumero() {
+  var tecla = window.event ? event.keyCode : e.which;
+  if (tecla == 48 || tecla == 49) return true;
+  else {
+    return false;
+  }
+}
